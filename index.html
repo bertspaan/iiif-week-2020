@@ -73,11 +73,13 @@
 <code class="language-js">{
   "@id": "https://bertspaan.nl/iiifmaps?url=https%3A%2F%2Fpurl.stanford.edu%2Fvg994wz9415%2Fiiif%2Fmanifest",
   "type": "AnnotationPage",
-  "@context": "http://www.w3.org/ns/anno.jsonld",
+  "@context": [
+    "http://geojson.org/geojson-ld/geojson-context.jsonld",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
   "items": [
     {
       "type": "Annotation",
-      "@context": "http://www.w3.org/ns/anno.jsonld",
       "motivation": "georeference-ground-control-points",
       "body": {
         "type": "FeatureCollection",
